@@ -55,5 +55,20 @@ int main() {
     cout << "number of nodes in tree after delete is " << bst.countNodes() << endl;
     cout << endl;
 
+    cout << "Is item in tree " << endl;
+    if(bst.isItemInTree("words") == true){
+        cout << "true" << endl;
+    }
+    else{
+        cout<<"false"<<endl;
+    }
+    bst.makeEmpty();
+    cout << "number of nodes in tree after make empty is " << bst.countNodes() << endl;
+    bst.insertItem(s);
+    print(bst.postOrderTraversal());
+    cout << "number of nodes in tree after add is " << bst.countNodes() << endl;
+    bst.makeEmpty();
+    cout << "number of nodes in tree after make empty is " << bst.countNodes() << endl;
+    cout << endl;
 }
 
